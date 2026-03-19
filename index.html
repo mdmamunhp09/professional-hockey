@@ -45,46 +45,87 @@
 </head>
 
 <body class="manrope">
-    <header class="container mx-auto my-24 px-4 md:px-3 lg:px-0 relative ">
-        <div class="carousel w-full ">
-            <div id="slide1" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full rounded-xl" />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+    <header class=" container mx-auto ">
+        <!-- navbar section start  -->
+        <section class="mt-14">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-base">
+                            <li class="font-bold text-btnC"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-3xl lg:text-4xl font-extrabold">Hockey’s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="font-bold text-btnC"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="mr-4 bg-transparent outline-none  border-none text-textDark text-xl font-bold hidden lg:block"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="btn bg-btnC text-white text-xl font-bold">Get Ticket</a>
+                    
                 </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-                    class="w-full rounded-2xl" />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+        </section>
+        <!-- banner section start  -->
+        <section class="my-24 px-4 md:px-3 lg:px-0 relative ">
+            <div class="carousel w-full h-[550px] ">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full rounded-xl" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png"
+                        class="w-full rounded-2xl" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png"
+                        class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png"
+                        class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
             </div>
-            <div id="slide3" class="carousel-item relative w-full">
-                <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-                <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-        </div>
-
-        <div
+             <div
             class="p-5 md:p-6 lg:p-8 bg-black rounded-xl text-white md[w-480px] lg:w-[566px] space-y-4 lg:absolute right-0 lg:right-8 bottom-0 lg:bottom-8">
             <h2 class="text-xl lg:text-2xl font-extrabold">Meet all the heroes from the field</h2>
             <p class="text-base font-medium text-white60">Dit amet consectetur. Condimentum dignissim adipiscing
                 aliquam
                 turpis placerat dolor. Purus urna in sit nullam proin. </p>
         </div>
+        </section>
     </header>
 
     <main class="container mx-auto">
@@ -254,7 +295,7 @@
                     dolor. Purus urna in sit nullam proin. </p>
             </div>
             <div class="border border-dashed"></div>
-            <div class="px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
                 <!-- card-1  -->
                 <div
                     class="card card-side bg-base-100 gap-5 lg:pl-6 py-4 border shadow-lg flex flex-col lg:flex-row items-center">
@@ -455,12 +496,12 @@
                         <p class="text-textDark text-base">Phone Number</p>
                         <p class="text-lg font-extrabold">(+62) 123-321-543</p>
                     </div>
-                    <div class="bg-[#BCED6D1A] rounded-xl p-10">
+                    <div class="bg-[#FDDD5F1A] rounded-xl p-10">
                         <img class="mb-6" src="Images/Group 1171275318.png" alt="">
                         <p class="text-textDark text-base">Email : </p>
                         <p class="text-lg font-extrabold">hockeys@support.com</p>
                     </div>
-                    <div class="bg-[#BCED6D1A] rounded-xl p-10">
+                    <div class="bg-[#629CF31A] rounded-xl p-10">
                         <img class="mb-6" src="Images/Group 1171275317.png" alt="">
                         <p class="text-textDark text-base">Location</p>
                         <p class="text-lg font-extrabold">Location :
